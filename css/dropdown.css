@@ -1,0 +1,48 @@
+.angle{
+    transition: all 0.5s ease;
+    rotate: 0deg;
+}
+.angle-on{
+    rotate: 180deg!important;
+}
+.check:hover{
+
+    color: black!important;
+    transition: all 0.1s ease-in-out;
+    transform: scale(1.1);
+}
+.drop-menu{
+    left: 50%;top: 50%;
+    opacity: 0.99;position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.drop-off{
+    width: 50% !important;
+    height: 0px!important;
+}
+.drop-on{
+    height: 300px!important;
+    display: flex;
+    padding: 5%;
+}
+.drop-off:hover{
+    height: 300px!important;
+    padding: 5%;
+    display: flex;
+}
+.drop-off:hover .object-off{
+    display: block;
+    height: auto;
+}
+.object-off{
+    display: none;
+    height: 0px;
+}
+.object-on{
+    display: block!important;
+}
+@media (max-width: 995px) {
+    .drop-menu{
+        top: 0!important;
+    }
+}

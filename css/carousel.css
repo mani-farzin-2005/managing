@@ -1,0 +1,48 @@
+
+.owl-carousel .item {
+      transition: transform 0.7s, margin 0.3s;
+      margin: 0 10px;
+    }
+
+    .owl-carousel .center .item {
+      transform: scale(1.1);
+      z-index: 2;
+      margin: 0 20px;
+    }
+
+    .owl-carousel .item:not(.center .item) {
+      transform: scale(0.75);
+      z-index: 1;
+    }
+
+    .owl-carousel .item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .owl-carousel .owl-stage {
+      display: flex;
+      align-items: center;
+      height: 350px!important;
+    }
+    .caption {
+        display: none;
+        text-align: center;
+        font-size: 30px;
+        color: #333;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .owl-carousel .center .caption {
+        display: block;
+    }
+
+@media (max-width: 600px){
+    .caption{
+        display: block;
+    }
+    .owl-carousel .active .item{
+        transform: scale(1) !important;
+    }
+}

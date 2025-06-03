@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support Chat Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .support-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: darkgoldenrod;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .chat-box {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      width: 300px;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: none;
+      flex-direction: column;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+    }
+
+    .chat-header {
+      background-color: darkgoldenrod;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .chat-body {
+      padding: 10px;
+      height: 150px;
+      overflow-y: auto;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #eee;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .chat-input button {
+      background-color: darkgoldenrod;
+      color: white;
+      border: none;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<div class="chatbox">
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cumque cupiditate illo nihil, obcaecati quisquam recusandae repellendus? Alias, aperiam architecto corporis ea fugit labore minima neque nobis numquam perspiciatis repudiandae.
+  <div class="chat-tail"></div>
+</div>
+
+<style>
+.chatbox {
+  position: relative;
+  display: inline-block;
+  max-width: 80%;
+  background-color: #007BFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 12px 16px;
+  color: white;
+  word-wrap: break-word;
+}
+
+
+.chat-tail {
+  position: absolute;
+  bottom: -12px;
+  left: 30px; /* جابه‌جایی دم به چپ */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #007BFF; /* رنگ دم */
+}
+</style>
+
+</body>
+</html>

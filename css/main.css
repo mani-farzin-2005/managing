@@ -1,0 +1,120 @@
+.hidden-on-load {
+  opacity: 0;
+  transition: all 0.6s ease-in-out ;
+}
+.visible{
+    opacity: 1!important;
+}
+.header-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  padding-bottom:5px;
+  overflow: hidden;
+}
+#company{
+    text-align: right;padding-top: 10%;padding-right: 5%;font-size: 50px;left: 60%;
+}
+.off{
+    opacity: 0;
+}
+
+#chat-bot{
+    transition: all 1s ease-in-out;
+}
+
+.full{
+    object-position: center;object-fit: cover;height: 50px;width: 50px;
+}
+.lb{
+
+    width: 70px!important;height: 70px!important;
+}
+
+#bigggi{
+    transition: opacity 1s ease-in-out;
+}
+#profile{transition: all 0.4s ease-in-out;}
+#foot{
+    display: flex;
+    flex-flow: row;
+}
+.footer-item{
+    width: 50%;
+}
+.header-item::before,
+.header-item::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: darkgoldenrod;
+  width: 0;
+  left: 50%;
+  transition: all 0.4s ease-out;
+}
+
+.header-item::before {
+  top: 0; /* top border */
+}
+
+.header-item::after {
+  bottom: 0; /* bottom border */
+}
+
+.header-item:hover::before,
+.header-item:hover::after {
+  left: 0;
+  width: 100%;
+}
+#logo{
+    transition: all 0.4s ease;
+}
+#logo:hover {
+
+    transform: scale(1.1);
+}
+#profile:hover{
+transition: all 0.1s ease-in-out;
+    transform: scale(1.1) !important;
+}
+.hidden-on-load.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.assistant-words{
+    text-align: left!important;
+}
+.shown{
+    opacity: 1!important;
+}
+.vazir {
+    font-family: 'Vazir', sans-serif;
+}
+.fullscreen{
+    background-image: url("../img/businessmen-working-strategic-planning.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.social-apps:hover{
+    color: darkgoldenrod!important;
+}
+.farsi{
+    text-align: right;
+}
+@media (max-width: 700px) {
+    .footer-item{
+        width: 100% !important;
+        height: 50%;
+    }
+    .fullscreen{
+        margin-top: 13%;
+    }
+    #company{
+        padding-top: 15%;
+    }
+    @media (max-width: 450px) {
+    #company{
+        font-size: 30px;
+    }
+}
+}

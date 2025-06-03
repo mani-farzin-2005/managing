@@ -1,0 +1,111 @@
+#chat{
+  padding-left: 10px;padding-bottom: 3%;gap: 5px;
+}
+#profile{
+  transform: scale(0);height: 50px;width: 50px;text-align: right;
+}
+#chat-bot{
+  width: 10%;opacity: 0.8;overflow-y: scroll;border-radius: 4%;
+}
+#help-box{
+  margin-bottom: 10%;height: fit-content;border-radius: 4%;padding: 10%;width: 100%;
+}
+
+#help{
+  text-align: center;width: 100%;font-size: 15px;
+}
+#first-chat{
+  height: fit-content;display: none;transition: all 0.1s ease;
+}
+#namee-lable{
+  width: 100%;
+}
+#namee{
+  margin: 1px;
+
+}
+#emaill-lable{
+  width: 100%;
+}
+#emaill{margin: 1px;}
+#waiting-for-operator img{
+  width: 50px;height: 50px;object-fit: cover;object-position: center;
+}
+#question-text{
+  height: fit-content;display: none;transition: all 0.1s ease;width: fit-content;
+}
+#chat-input{
+
+  display: none;position: fixed;top: 90%;height: 10%;border-top: black 1px solid;z-index: 100;
+}
+#chat-area{
+  font-size: 15px;resize: none;border: none!important;width: 80%;
+}
+#textt{
+  width: 20%;height: 100%;border: none;
+}
+.shown{
+  display: block!important;
+}
+.chatbox {
+  margin-top: 20px;
+  position: relative;
+  display: inline-block;
+  max-width: 80%;
+  background-color: #007BFF;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 12px 16px;
+  color: white;
+  word-wrap: break-word;
+}
+
+
+.chat-tail {
+  position: absolute;
+  bottom: -12px;
+  left: 30px; /* جابه‌جایی دم به چپ */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #007BFF; /* رنگ دم */
+}
+.chatbox-own {
+  text-align: right;
+  position: relative;
+  display: inline-block;
+  max-width: 80%;
+  background-color: #168e7a;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 12px 16px;
+  color: white;
+  word-wrap: break-word;
+}
+.chat-tail-own {
+
+  position: absolute;
+  top: 100%;
+  left: 70%; /* جابه‌جایی دم به چپ */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #168e7a; /* رنگ دم */
+}
+@media (max-width: 600px) {
+  #chat{
+    margin-bottom: 10%;
+  }
+  #chat-bot{
+    width: 55%
+  }
+  #namee{
+    width: 99%;
+  }
+  #emaill{
+    width: 99%;
+  }
+
+}
